@@ -1,0 +1,24 @@
+
+Get All courses
+
+query getAllCourses{
+  allcourses{
+    title
+    author
+  }
+}
+
+Get particular course by Id
+query getSingleCourse($courseID: Int!) {
+    course(id: $courseID) {
+        title
+        author
+        description
+        topic
+        url
+    }
+}
+
+{ 
+    "courseID":1
+}
